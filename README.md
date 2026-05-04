@@ -1,17 +1,38 @@
-# Machine Learning Disease Prediction And Drug Recommendation
+# Disease Diagnosis & Drug Recommendation System
 
-This project is a machine learning-based system designed for disease prediction and drug recommendation.
+An advanced AI-powered health management platform designed by **Himanshu Jain**. This system identifies potential diseases based on user-reported symptoms and provides automated drug recommendations using Machine Learning.
 
-## Overview
-This repository contains the code and resources for building a predictive model that identifies potential diseases based on patient symptoms and recommends appropriate drugs.
+## 🚀 Features
+- **Symptom-Based Diagnosis**: Uses a Random Forest Classifier to predict diseases with high accuracy.
+- **Drug Recommendation**: Intelligent AI mapping of diseases to recommended medications.
+- **Doctor-Patient Portal**: Separate dashboards for healthcare providers and patients.
+- **Appointment Management**: Patients can book consultations, and doctors can manage schedules.
+- **Profile Management**: Secure registration and profile tracking for all users.
 
-## Setup Instructions
-1. Install required dependencies:
+## 🛠️ Technology Stack
+- **Backend**: Python, Django
+- **Machine Learning**: Scikit-learn, Joblib, NumPy
+- **Frontend**: HTML5, CSS3 (Bootstrap), JavaScript (jQuery)
+- **Database**: MySQL
+
+## 📦 Installation & Setup
+1. **Clone the repository**:
    ```bash
-   pip install -r requirements.txt
+   git clone https://github.com/hjain-tech/Disease-Diagnosis-Model.git
    ```
-2. Run the application:
+2. **Install Dependencies**:
+   ```bash
+   pip install django numpy scikit-learn joblib mysqlclient
+   ```
+3. **Configure Database**: Update `healthcare/settings.py` with your MySQL credentials.
+4. **Run Migrations**:
+   ```bash
+   python manage.py migrate
+   ```
+5. **Start Server**:
    ```bash
    python manage.py runserver
    ```
-*(Note: Please update the commands above if your setup process differs)*
+
+## 👨‍💻 Author
+Developed and Maintained by **Himanshu Jain**.
